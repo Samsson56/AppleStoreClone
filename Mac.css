@@ -52,14 +52,13 @@
   position: absolute;
   top: 50px;
   z-index: 20;
-  
 }
 .tagline {
   font-size: 52px;
   position: absolute;
   top: 90px;
   z-index: 10;
-  
+
   color: #0071e3;
 }
 .heroimg1 {
@@ -91,15 +90,9 @@
   padding: 10px;
 }
 .c1-desc {
-  width: 800px;
-  height: 150px;
-  font-size: 21px;
-  border: none;
-  color: grey;
-  font-weight: 600;
-  letter-spacing: 0.009em;
-  line-height: 1.1666666667;
-  margin-left: 100px;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
 }
 .heroimg2 {
   width: 100%;
@@ -110,13 +103,13 @@
   font-weight: 600;
   margin-left: 300px;
 }
-.c2-title > p{
+.c2-title > p {
   font-size: 52px;
   font-weight: 600;
   margin-left: 300px;
   color: #0071e3;
 }
-.c2-desc > p{
+.c2-desc > p {
   width: 950px;
   height: 90px;
   border: none;
@@ -127,16 +120,16 @@
   letter-spacing: 0.009em;
   line-height: 1.1666666667;
 }
-.c3-title{
+.c3-title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.heroimg3{
+.heroimg3 {
   width: 1078px;
   height: 761px;
 }
-.c3-desc{
+.c3-desc {
   margin-top: 20px;
   font-weight: 600px;
   letter-spacing: 0.009em;
@@ -144,66 +137,331 @@
   font-size: 21px;
   color: grey;
 }
-.card4-about{
-
-}
-.c4-title h2{
+/* .card4-about{
+  
+} */
+.c4-title h2 {
   font-size: 14px;
   font-weight: 600;
   margin-left: 300px;
-  
 }
-.c4-title p{
+.c4-title p {
   font-size: 52px;
   font-weight: 600;
   margin-left: 300px;
   color: #0071e3;
 }
-.heroimg4{
+.heroimg4 {
   width: 1500px;
   height: 800px;
   margin-top: 10px;
 }
-.m4-chip{
+.m4-chip {
   width: 100px;
   height: 100px;
   border-radius: 15px;
 }
-.performance-badges{
-  /* margin-top: 100px; */
+.vertical-line {
+  width: 1px;
+  height: 200px;
+  background-color: #86868b;
+  margin: 0 50px;
+}
+.performance-badges {
   margin-left: 350px;
-  border: 1px solid black;
+  border: none;
   width: 900px;
   height: 400px;
   display: flex;
   align-items: center;
-
 }
-.badges{
+.badges {
   width: 800px;
   height: 300px;
-  border: 1px solid red;
+  border: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.b1{
+.b1 {
   font-size: 19px;
   font-weight: 600;
   color: grey;
 }
-.b2{
+.b2 {
   font-size: 72px;
   font-weight: 600;
   color: #0071e3;
 }
-.b3{
+.b3 {
   font-size: 19px;
   font-weight: 600;
   color: grey;
 }
-#b3{
+#b3 {
   font-size: 19px;
   font-weight: 600;
   color: green;
+}
+.performance-desc {
+  margin-top: 0px;
+  font-weight: 600px;
+  letter-spacing: 0.009em;
+  line-height: 1.1666666667;
+  font-size: 21px;
+  color: grey;
+  width: 900px;
+  height: 400px;
+  margin-left: 350px;
+}
+.footer-divider{
+  width: 90%;
+  height: 1px;
+  background-color: #b5b0b0;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.footer-bottom{
+  margin-bottom: 15px;
+  margin-left: 0px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: grey;
+  font-weight: 600px;
+  letter-spacing: 0.009em;
+  line-height: 1.1666666667;
+}
+
+
+/* =========================
+   GLOBAL RESPONSIVE FIXES
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+  .nav-list {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+
+  .tagline {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 26px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .c1-desc {
+    width: 90%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .c2-title > h2,
+  .c2-title > p,
+  .c2-desc > p,
+  .c4-title h2,
+  .c4-title p {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .c2-desc > p {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .heroimg3 {
+    width: 90%;
+    height: auto;
+  }
+
+  .performance-badges {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .badges {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+  /* Navbar */
+  .nav-list {
+    justify-content: space-between;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+
+  .nav-list li:not(.logo) {
+    display: none; /* Hide menu items like Apple mobile */
+  }
+
+  /* Hero Section */
+  .card1 {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    position: static;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .tagline {
+    position: static;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .heroimg1 {
+    height: auto;
+  }
+
+  /* Card 1 About */
+  .c1-ai {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+
+  .c1-btn {
+    width: 100px;
+    height: 44px;
+  }
+
+  .c1-desc {
+    width: 90%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Design Section */
+  .c2-title > h2 {
+    font-size: 12px;
+    margin: 0 20px;
+  }
+
+  .c2-title > p {
+    font-size: 30px;
+    margin: 0 20px;
+  }
+
+  .c2-desc > p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .heroimg2 {
+    height: auto;
+  }
+
+  /* Models Section */
+  .heroimg3 {
+    width: 95%;
+    height: auto;
+  }
+
+  .c3-desc {
+    font-size: 16px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  /* Performance Section */
+  .c4-title h2 {
+    margin: 0 20px;
+    font-size: 12px;
+  }
+
+  .c4-title p {
+    margin: 0 20px;
+    font-size: 30px;
+  }
+
+  .heroimg4 {
+    width: 100%;
+    height: auto;
+  }
+  .vertical-line {
+    display: none;
+  }
+
+  .performance-badges {
+    width: 95%;
+    margin: 20px auto;
+    flex-direction: column;
+    border: none;
+  }
+
+  .badges {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border: none;
+  }
+
+  .b2 {
+    font-size: 48px;
+  }
+  .performance-desc{
+    width: 95%;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+  }
+  .footer-bottom{
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (≤480px)
+========================= */
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 26px;
+  }
+
+  .c1-ai {
+    font-size: 20px;
+  }
+
+  .b2 {
+    font-size: 40px;
+  }
 }
