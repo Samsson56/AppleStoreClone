@@ -39,6 +39,61 @@
 .nav-list li:hover {
   opacity: 1;
 }
+.nav-item{
+  position: relative;
+  font-weight: 500;
+  cursor: pointer;
+}
+.dropdown{
+  position: fixed;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+
+  padding: 50px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.35s ease;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 999;
+}
+.nav-item:hover .dropdown{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropdown-content {
+   width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;    
+  padding: 0 40px;
+  text-align: left; 
+  
+}
+.dropdown-content h3 {
+  margin-bottom: 18px;
+  color: #6e6e73;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.dropdown-content a{
+  display: block;
+  text-decoration: none;
+  color: #1d1d1f;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  transition: color 0.2s ease;
+}
+.dropdown-content a:hover {
+  color: #0071e3;
+}
 .card1 {
   display: flex;
   justify-content: center;
